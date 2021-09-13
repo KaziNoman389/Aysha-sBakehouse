@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+#Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #03001e;
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+}
+.Payment{
+    display: flex;
+     width: 90%;
+     height: 90%;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 0px 0px 30px 15px rgb(0, 0, 0,0.2);
+ }
+
+ .ProductView{
+    width: 40%;
+    height: 100%;
+    background: url(../img/checkout/beauty.jpg) center center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    transition: 20s;
+
+    animation-name: ImageAnimate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite ;
+    animation-play-state: running;
+    animation-timing-function: step-start;
+}
+@keyframes ImageAnimate{
+    0%{
+        background: url(../img/ImageAnimation/1.jpg) center center;
+         background-size: cover;
+    }
+    20%{
+        background: url(../img/ImageAnimation/2.jpg) center center;
+         background-size: cover;
+    }
+    40%{
+        background: url(../img/ImageAnimation/3.jpg) center center;
+         background-size: cover;
+    }
+    60%{
+        background: url(../img/ImageAnimation/4.jpg) center center;
+         background-size: cover;
+    }
+    80%{
+        background: url(../img/ImageAnimation/5.jpg) center center;
+         background-size: cover;
+    }
+    100%{
+        background: url(../img/ImageAnimation/6.jpg) center center;
+         background-size: cover;
+    }
+    
+}
+.ProductBill{
+    padding: 40px;
+     width: 80%;
+     height: 100%;
+   
+ }
+ .ProductBill h1{
+     top: 0px;
+     text-align: center;
+ }
+ .ProductBill h2{
+    color: #e40baa;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+ }
+ .ProductBill h3{
+    color:  #e40baa;
+    font-weight: 200;
+ }
+.detail ul{
+    
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.detail ul li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    color: gray;
+}
+.CheckOutBtn {background-image: linear-gradient(to right, #ff0084 0%, #33001b  50%, #ff0084  100%)}
+
+.CheckOutBtn {
+    margin: 60px auto;
+    width: 330px;
+    height: 60px;
+    font-size: 25px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 40px;
+    border: none;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+ .CheckOutBtn:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }

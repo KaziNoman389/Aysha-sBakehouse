@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewData["Title"] = "Store";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/store.css" rel="stylesheet" />
+
+<nav class="topnav" id="myTopnav">
+    <a href="../Home/Index">Home</a>
+    <!-- <a href="#">Store</a> -->
+    <a href="../Home/Services">Services</a>
+    <a href="../Home/AboutUs">About Us</a>
+    <a href="../Home/ContactUs">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+
+<!-- Store Section -->
+
+<section id="store">
+    <div class="mainheading">
+        <h1>Products</h1>
+    </div>
+
+    <div id="cards">
+
+        <div id="box1" class="boxcustom">
+            <img src="~/img/store/1.png" alt="cake">
+
+            <h2 id="cake" class="subheading">Chocolate Dipped Cake</h2>
+
+            <h3>400Tk</h3>
+            <p>Nothing tastes better than a chocolate dipped cake with a variety of flavors, which is always available at our Bakehouse.</p>
+
+            <div class="button_cont" align="center">
+                <a onclick="productP1()" class="example_c"
+                   href="../Home/ProductDetails" target="_blank"
+                   rel="nofollow noopener">Order Now</a>
+            </div>
+        </div>
+
+        <div id="box2" class="boxcustom">
+            <img src="~/img/store/2.png" alt="icecream">
+
+            <h2 id="ice-cream" class="subheading">Flavourful Ice-Cream</h2>
+
+            <h3>400Tk</h3>
+            <p>
+                Life is like an ice-cream, enjoy before it melts. <br>
+                So what you waiting for order now because its Ice-cream time!
+            </p>
+
+            <div class="button_cont" align="center">
+                <a onclick="productP2()" class="example_c" href="../Home/ProductDetails" target="_blank"
+                   rel="nofollow noopener">Order Now</a>
+            </div>
+        </div>
+
+        <div id="box3" class="boxcustom">
+            <img src="~/img/store/3.png" alt="pastries">
+
+            <h2 id="pastries" class="subheading">Finger Liking Pastries</h2>
+
+            <h3>400Tk</h3>
+            <p>Craving for pastries? Then order from us to make your tastebuds feel heavenly from our Bakehouse!</p>
+
+            <div class="button_cont" align="center"><a class="example_c" onclick="productP3()" href="../Home/ProductDetails" target="_blank" rel="nofollow noopener">Order Now</a></div>
+        </div>
+
+        <div id="box4" class="boxcustom">
+            <img src="~/img/store/4.png" alt="popsicles">
+
+            <h2 id="popsicles" class="subheading">Ice-cream popsicle</h2>
+
+            <h3>400Tk</h3>
+            <p>
+                Have faith in Ice-cream is anything with popsicle!<br>
+                So enjoy some Ice-cream popsicle.
+            </p>
+
+            <div class="button_cont" align="center">
+                <a class="example_c" onclick="productP4()" href="../Home/ProductDetails" target="_blank"
+                   rel="nofollow noopener">Order Now</a>
+            </div>
+        </div>
+
+        <div id="box5" class="boxcustom">
+            <img src="~/img/store/5.png" alt="cupcakes">
+
+            <h2 id="cupcakes" class="subheading">Colourful Cupcakes</h2>
+
+            <h3>400Tk</h3>
+            <p>
+                What makes life so sweet ?<br>
+                A cupcake a day keeps the tummy rumbles away, so order now from Bakehouse.
+            </p>
+            <div class="button_cont" align="center">
+                <a class="example_c" onclick="productP5()" href="../Home/ProductDetails" target="_blank" rel="nofollow noopener">Order Now</a>
+            </div>
+        </div>
+
+        <div id="box6" class="boxcustom">
+            <img src="~/img/store/6.png" alt="swiss-roll">
+
+            <h2 id="swiss-roll" class="subheading">Swiss Roll Dessert</h2>
+
+            <h3>400Tk</h3>
+            <p>
+                Nothing tastes better than a Swiss Roll Dessert with insane taste of flavors, which is always available
+                at our Bakehouse.
+            </p>
+
+            <div class="button_cont" align="center">
+                <a class="example_c" onclick="productP6()" href="../Home/ProductDetails" target="_blank" rel="nofollow noopener">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<script src="~/js/Store.js"></script>
+<script src="~/js/Product Detail.js"></script>

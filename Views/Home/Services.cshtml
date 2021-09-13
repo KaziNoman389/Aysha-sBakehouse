@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Services";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Navigation Bar -->
+<nav class="topnav" id="myTopnav">
+    <a href="../Home/Index">Home</a>
+    <a href="../Home/Store">Store</a>
+    @*<a href="../Home/Services">Services</a>*@
+    <a href="../Home/AboutUs">About Us</a>
+    <a href="../Home/ContactUs">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+
+<!-- Services Section -->
+<section id="shop">
+    <h1 id="shopheading">Our Services</h1>
+
+    <div id="ShopContainer">
+
+        <div class="shopingbox">
+            <h1 class="subheading" id="boxheading1">Quality Product</h1>
+            <img class="ShopImg1" src="~/img/whychoose/cake-pop.png" alt="cake">
+            <p class="Shoptext1">
+                We guarantee the quality of all the cakes we provide as they are baked using the
+                freshest ingredients.
+            </p>
+        </div>
+
+        <div class="shopingbox">
+            <h1 class="subheading" id="boxheading2">Catering Services</h1>
+            <img class="ShopImg2" src="~/img/whychoose/pastry.png" alt="catering_logo">
+            <p class="Shoptext2">
+                Our bakery also provides an outstanding catering service for events and special
+                occasions.
+            </p>
+        </div>
+
+        <div class="shopingbox">
+            <h1 class="subheading" id="boxheading3">Free Delivery</h1>
+            <img class="ShopImg1" src="~/img/whychoose/delivery.png" alt="truck">
+            <p class="Shoptext1">
+                All orders submitted by our Jalgoan clients are delivered for free throughout the
+                Jalgoan City.
+            </p>
+        </div>
+
+        <div class="shopingbox">
+            <h1 class="subheading" id="boxheading4">24/7 Customer Support</h1>
+            <img class="ShopImg2" src="~/img/whychoose/clock.png" alt="24/7">
+            <p class="Shoptext2">
+                We provide 24/7 customer support.If you have any query we solve it within an hour.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>

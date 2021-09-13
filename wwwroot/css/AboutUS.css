@@ -1,0 +1,23 @@
+    #about_us {
+        height: 650px;
+        width: 100%;
+        background: url('../img/about/aboutUs.png') center center no-repeat;
+        background-size: cover;
+        border: 10px solid white;
+    }
+
+    #about_us h1 {
+        margin: 33px 0px 0px 540px;
+        font-size: 5rem;
+        display: block;
+        color: #ec0f6b;
+    }
+
+    #about_us h3 {
+        margin: 10px 0px 0px 430px;
+        font-size: 1.8rem;
+        display: block;
+        color: #267e94;
+        font-family: 'Great Vibes', cursive;
+        padding: 5px;
+    }

@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "AboutUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Great+Vibes&family=Josefin+Sans:wght@500&family=PT+Sans&display=swap"
+      rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/css/AboutUS.css" rel="stylesheet" />
+
+<!-- Navigation Bar -->
+<nav class="topnav" id="myTopnav">
+    <a href="../Home/Index">Home</a>
+    <a href="../Home/Store">Store</a>
+    <a href="../Home/Services">Services</a>
+    @*<a href="../Home/AboutUs">About Us</a>*@
+    <a href="../Home/ContactUs">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+
+<!-- ABOUT US SECTION START FROM HERE -->
+<section id="about_us">
+    <div class="Para1">
+        <h1 class="mainheading">About Us</h1>
+    </div>
+    <div class="Para2">
+        <h3>
+            <br>
+            A place to get delicious, hygienic homemade food prepared by an aspiring cook and food lover. You will also have tempting cakes and deserts. There are many sweet dish available here. Cakes of different flavors, pastries, cupcakes, jar cakes & vice versa is available. All are homemade which can give you an experience of having five star hotel food.
+            <br>
+            <br>We do not compromise with food quality and you can be guaranteed that the delicious food will be finger licking good. We also provide frozen items, freshly made. We also order for birthday cakes or customized cakes or any food items. Catering for any small party who are willing to have freshly homemade is also provided. We give word to you that we try to give our best to our customers & their choices are our first preference.
+        </h3>
+    </div>
+</section>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
